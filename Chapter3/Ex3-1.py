@@ -21,3 +21,9 @@ plt.show()
 
 # What is that supposed to be?
 y[0]
+
+# Typecast Y as an int
+y = y.astype(np.uint8)
+
+# Separate training and testing data
+X_train, X_test, y_train, y_test = X[:60000], X[60000:], y[:60000], y[60000:]
